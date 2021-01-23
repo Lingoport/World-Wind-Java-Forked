@@ -68,6 +68,10 @@ public class AngleAnimator extends BasicAnimator
        this.begin = begin;
        this.end = end;
        this.propertyAccessor = propertyAccessor;
+       
+       String details = "This has beginning: " + this.begin.toString()
+           + ", and end: " + this.end.toString() + "\n";
+       Logging.logger().info(details);
     }
 
     /**
